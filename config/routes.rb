@@ -11,6 +11,12 @@ Rails.application.routes.draw do
   get("/update_director/:id",    { :controller => "directors", :action => "update_row"})
 
   get("/actors",                 { :controller => "actors", :action => "index"})
+  get("/actors/new",          { :controller => "actors", :action => "new_form"})
+  get("/actors/:id",          { :controller => "actors", :action => "show"})
+  get("/actors/:id/edit",     { :controller => "actors", :action => "edit_form"})
+  get("/delete_actor/:id",    { :controller => "actors", :action => "destroy"})
+  get("/create_actor",        { :controller => "actors", :action => "create_row"})
+  get("/update_actor/:id",    { :controller => "actors", :action => "update_row"})
 
   get("/movies",                 { :controller => "movies", :action => "index"})
 
